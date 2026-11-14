@@ -1,6 +1,6 @@
 """Train the linear SVM on HOG features with hard negative mining.
 
-Usage (from group_work/):
+Usage (from the repository root):
     python -m methods.hog_svm.train
 """
 import json

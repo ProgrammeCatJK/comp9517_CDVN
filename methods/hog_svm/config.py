@@ -30,11 +30,12 @@ HARD_NEG_ROUNDS = 2
 HARD_NEG_IMAGES = 400
 HARD_NEG_PER_IMAGE = 20
 
-# Detection
+# Detection (SCORE_THRESHOLD, NMS_IOU and OPERATING_THRESHOLD picked on val with tune.py)
 SCALE_MAX = 2.4         # 2.4x upscale lets a 32px window find ~12px birds
 SCALE_MIN = 0.08
 SCALE_STEP = 1.2
-SCORE_THRESHOLD = -0.5
+SCORE_THRESHOLD = 0.25
 PRE_NMS_TOP_K = 3000
-NMS_IOU = 0.3
+NMS_IOU = 0.5
 MAX_DETECTIONS = 200
+OPERATING_THRESHOLD = 0.6   # boxes counted as detections in figures and precision/recall
